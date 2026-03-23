@@ -1,0 +1,16 @@
+# Dependências
+node_modules/
+
+# Código compilado
+dist/
+
+# Variáveis de ambiente
+.env
+
+# Bancos de dados locais (SQLite)
+*.db
+*.db-journal
+
+# Configurações de IDE (IntelliJ, VS Code, etc)
+.idea/
+.vscode/

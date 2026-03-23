@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Configurado para um banco relacional padrão, via variável de ambiente
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Um modelo genérico apenas para manter a estrutura
+model Usuario {
+  id           Int      @id @default(autoincrement())
+  email        String   @unique
+  criadoEm     DateTime @default(now())
+  atualizadoEm DateTime @updatedAt
+}

@@ -1,0 +1,10 @@
+### 1. Bater na Rota, passar pelo Controller, Service e Salvar no DB
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+  "email": "engenharia@univesp.br"
+}
+
+### 2. Buscar o usuário salvo direto do DB
+GET http://localhost:3000/usuarios

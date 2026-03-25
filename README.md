@@ -79,21 +79,9 @@ npm run dev
 ```
 A API estará rodando com sucesso na porta 3000.
 
----
-
-## 🧪 Teste Funcional Rápido
-
-Para garantir que a conexão `Rota -> Controller -> Service -> Banco de Dados -> Docker` está funcionando, crie um arquivo `teste.http` na raiz do projeto (ou use o Postman/Insomnia) e dispare a requisição:
-
-```http
-### Criar um registro no banco
-POST http://localhost:3000/produtos
-Content-Type: application/json
-
-{
-  "nome": "Teclado Mecânico",
-  "preco": 350.00,
-  "categoria": "Periféricos"
-}
+### 8. Zod
+Instalando o zod:
+```bash
+npm install zod
 ```
-Se o retorno for um Status `201 Created` com os dados no formato JSON, a arquitetura está homologada e pronta para o desenvolvimento!
+---
